@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="api-key-container">
+        <h2>Bienvenido al Diccionario IA</h2>
+        <p>Para comenzar, por favor ingresa tu Clave API de Google AI Studio.</p>
+        <input type="password" id="api-key-input" placeholder="Pega tu clave API aquí">
+        <button id="save-api-key">Guardar y Empezar</button>
+        <a href="https://aistudio.google.com/app/apikey" target="_blank">¿No tienes una clave? Obtenla aquí</a>
+    </div>
+
+    <div id="app-container" class="hidden">
+        <header class="app-header">
+            <h1>Diccionario IA</h1>
+        </header>
+
+        <main id="chat-window" class="chat-window">
+            </main>
+
+        <footer class="input-area">
+            <div class="input-capsule">
+                <input type="text" id="word-input" placeholder="Escribe una palabra...">
+            </div>
+            <div class="button-container">
+                <button id="simple-btn">Simple</button>
+                <button id="complete-btn">Completa</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
